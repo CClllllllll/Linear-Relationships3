@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package linear_equations;
 
 import java.util.Scanner;
@@ -6,8 +10,8 @@ import java.util.Scanner;
 public class Linear_Equations {
     
     //attributes
-    int slope;
-    int y_intercept;
+    private int slope;
+     private int y_intercept;
     
     //default constructor
     public Linear_Equations() {
@@ -47,13 +51,13 @@ public class Linear_Equations {
         return x;
     }
     
-     //set Slope
-    public void setSlope (int s){
+     //get Slope
+    public void getSlope (int s){
         slope = s;
     }
     
-     //set Slope
-    public void setY_intercept (int yi){
+     //get Slope
+    public void getY_intercept (int yi){
         y_intercept = yi;
     }
     
@@ -69,11 +73,11 @@ public class Linear_Equations {
         
         System.out.println ("Please enter the slope: ");       
          int userInputSlope = Integer.parseInt(in.next());
-         my_Linear_Equations.setSlope(userInputSlope);
+         my_Linear_Equations.getSlope(userInputSlope);
         
          System.out.println ("Please enter the y - intercept: "); 
          int userInputYintercept = Integer.parseInt(in.next());
-         my_Linear_Equations.setY_intercept(userInputYintercept);
+         my_Linear_Equations.getY_intercept(userInputYintercept);
          
          System.out.println("Please enter \n x if you would like to solve for the x value \n or \n y if you would like to solve for the y value");
          String userOption = in.next();
